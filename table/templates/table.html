@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10МАТ</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">	
+</head>
+<body class="content">
+	<div class="title">10МАТ</div>
+	<div>
+		<table class="blog" align="center">
+			<th>
+				<td><a href='{% url "blog:list" %}'>Новости</a></td>
+				<td><a href='{% url "table:tab" %}'>Расписание</td>
+				<td>Домашнее задание</td>
+				<td>Фотогалерея</td>
+				<td>Документы</td>
+			</th>
+		</table>
+	</div>
+	<div>
+		<table class="blog">
+			<tr>
+				<td><a href="{% static "{{img[0].image}}" %}" target="_blank"><img src="{% static "mon.png" %}" width="250"></a></td>
+				<td><a href="{% static "{{img[1].image}}" %}" target="_blank"><img src="{% static "tue.png" %}" width="250"></td>
+				<td><a href="{% static "{{img[2].image}}" %}" target="_blank"><img src="{% static "wed.png" %}" width="250"></td>
+			</tr>
+			<tr>
+				<td><a href="{% static "{{img[3].image}}" %}" target="_blank"><img src="{% static "thu.png" %}" width="250"></a></td>
+				<td><a href="{% static "{{img[4].image}}" %}" target="_blank"><img src="{% static "fri.png" %}" width="250"></td>
+				<td><a href="{% static "{{img[5].image}}" %}" target="_blank"><img src="{% static "sat.png" %}" width="250"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

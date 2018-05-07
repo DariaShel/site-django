@@ -1,0 +1,22 @@
+body{
+			background: url({% static "bg.jpg" %});
+			font-size: 12pt;
+}
+.content {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.title{
+	font-size: 60px;
+	font-family: Courier,monospace;
+	text-align: center;
+}
+.border_top{
+	border-top-color: #4682B4;
+	border-top-style: double;
+}
+.blog{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100%;
+}
