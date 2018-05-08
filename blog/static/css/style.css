@@ -1,6 +1,5 @@
 body{
-			background: url("../bg.jpg");
-			font-size: 12pt;
+	font-size: 12pt;
 }
 .content {
 	margin-left: 25%;
@@ -16,7 +15,36 @@ body{
 	border-top-style: double;
 }
 .blog{
-	margin-left: 10px;
-	margin-right: 10px;
 	width: 100%;
+}
+.menu{
+	background-color: #008B8B;
+}
+ul.menu-ul{
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+li.menu-li{
+	list-style: none;
+	padding: 10px;
+}
+li.menu-li a{
+	 text-decoration: none;
+	 font-size: 16px;
+	 font-family: Cursive,cursive;
+	 color: #000000;
+	 padding: 5px;
+}
+li.menu-li:hover{
+	background-color: #20B2AA;
+}
+.pict{
+	padding: 10px;
+	width: 190px;
+	position: static;
+}
+.pict:hover{
+	width: 200px;
+	transition: 0.5s;
 }

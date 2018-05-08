@@ -7,30 +7,30 @@
 	<title>10МАТ</title>
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">	
 </head>
-<body class="content">
+<body class="content" background="{% static "bg.jpg" %}">
+	<header>
 	<div class="title">10МАТ</div>
-	<div>
-		<table class="blog" align="center">
-			<th>
-				<td><a href='{% url "blog:list" %}'>Новости</a></td>
-				<td><a href='{% url "table:tab" %}'>Расписание</td>
-				<td>Домашнее задание</td>
-				<td>Фотогалерея</td>
-				<td>Документы</td>
-			</th>
-		</table>
-	</div>
+		<div class="menu">
+			<ul class="menu-ul">
+				<li class="menu-li"><a href="{% url "blog:list" %}">Новости</a></li>
+				<li class="menu-li"><a href="{% url "table:tab" %}">Расписание</a></li>
+				<li class="menu-li"><a href="#">Домашнее задание</a></li>
+				<li class="menu-li"><a href="#">Фотогалерея</a></li>
+				<li class="menu-li"><a href="#">Документы</a></li>
+			</ul>
+		</div>
+	</header>
 	<div>
 		<table class="blog">
 			<tr>
-				<td><a href="{% static "{{img[0].image}}" %}" target="_blank"><img src="{% static "mon.png" %}" width="250"></a></td>
-				<td><a href="{% static "{{img[1].image}}" %}" target="_blank"><img src="{% static "tue.png" %}" width="250"></td>
-				<td><a href="{% static "{{img[2].image}}" %}" target="_blank"><img src="{% static "wed.png" %}" width="250"></td>
+				<td><a href="{% static "Monday.png" %}" target="_blank"><img class="pict" src="{% static "mon.png" %}"></a></td>
+				<td><a href="{% static "Tuesday.png" %}" target="_blank"><img class="pict" src="{% static "tue.png" %}"></td>
+				<td><a href="{% static "Wednesday.png" %}" target="_blank"><img class="pict" src="{% static "wed.png" %}"></td>
 			</tr>
 			<tr>
-				<td><a href="{% static "{{img[3].image}}" %}" target="_blank"><img src="{% static "thu.png" %}" width="250"></a></td>
-				<td><a href="{% static "{{img[4].image}}" %}" target="_blank"><img src="{% static "fri.png" %}" width="250"></td>
-				<td><a href="{% static "{{img[5].image}}" %}" target="_blank"><img src="{% static "sat.png" %}" width="250"></td>
+				<td><a href="{% static "Thusday.png" %}" target="_blank"><img class="pict" src="{% static "thu.png" %}"></a></td>
+				<td><a href="{% static "Friday.png" %}" target="_blank"><img class="pict" src="{% static "fri.png" %}"></td>
+				<td><a href="{% static "Saturday.png" %}" target="_blank"><img class="pict" src="{% static "sat.png" %}"></td>
 			</tr>
 		</table>
 	</div>
